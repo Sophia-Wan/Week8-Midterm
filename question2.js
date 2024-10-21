@@ -28,9 +28,9 @@ if student gets 50 < write "Fail! ${name} has an F." */
 
 function gradingSystem(grade, name) {
 
-  if (grade >= 86 && grade <= 100) {
+   if (grade >= 86 && grade <= 100) {
     console.log(`Excellent! ${name} has an A!`);
-  } else if (grade >= 72 && grade <= 85) {
+   } else if (grade >= 72 && grade <= 85) {
     console.log(`Great work! ${name} has a B!`);
   } else if (grade >= 61 && grade <= 71) {
     console.log(`Good effort! ${name} has a C.`);
@@ -38,8 +38,23 @@ function gradingSystem(grade, name) {
     console.log(`Needs improvement, ${name} has a D.`);
   } else if (grade < 50 && grade >= 0) {
     console.log(`FAIL! ${name} has an F.`);
-  }
-  //write your code here
+  
+   /* if (grade === 86 + 2) {
+      console.log(`Work hard ${name}, youre gonna drop down to a B!`);
+  } if (grade === 86-2) {
+    console.log(`Youre almost at an A ${name}!`)
+  } else if (grade === 71+2) {
+    console.log(`Work hard ${name}, youre gonna drop to a C!`);
+  } else if (grade === 72-2) {
+    console.log(`Youre almost at an B ${name}!`);
+  } else if (grade === 60+2) {
+    console.log(`Work hard ${name}, youre gonna drop to a D!`);
+   } if (grade === 50+2) {
+    console.log (`Work hard ${name}, youre gonna fail!`);
+   }  else if (grade === 61-2) {
+    console.log(`Youre almost at an C ${name}!`);
+  } */
+  }//write your code here
 }
 
 function StartApp(){
