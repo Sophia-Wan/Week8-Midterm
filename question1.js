@@ -38,8 +38,7 @@ function inputPassword(userInput, userPassword){
 console.log('Lets reset your account!');
 } else if (userInput !== userPassword) {
     console.log("Access Denied!");
-  } 
-  //write your code here
+  }  //write your code here
 }
 
 //CHALLENGE FUNCTION
@@ -47,15 +46,16 @@ console.log('Lets reset your account!');
 
 function StartApp(){
   readline.question('Please create a password here: ', _input => {
-    if (_input < _input[0]) {
-      console.log("please enter a password largers than 5 letters!");
-    }
+   /* if (_input !== _input[5] || _input < _input[5]) {
+      console.log("please enter a password larger than 5 letters!");
+      return; 
+    } */
     readline.question('Please input the password you have just created: ', _password => {
 
       //call your function here.
       inputPassword(_input, _password);
       // readline.close();
-      if(_password !== "quit"){
+      if(_password !== "quit") {
         StartApp();
       } else {
         readline.close();
